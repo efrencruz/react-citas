@@ -87,16 +87,15 @@ const Formulario = ({ crearCita }) => {
                 <label>Fecha de alta</label>
                 <input type="date" name="fecha" className="u-full-width" onChange={handleChange} value={fecha} />
                 <label>Hora de alta</label>
-                <input
-                    type="time"
-                    name="hora"
-                    className="u-full-width"
-                    placeholder="Nombre mascota"
-                    onChange={handleChange}
-                    value={hora}
-                />
+                <input type="time" name="hora" className="u-full-width" onChange={handleChange} value={hora} />
                 <label>Síntomas</label>
-                <textarea className="u-full-width" name="sintomas" onChange={handleChange} value={sintomas}></textarea>
+                <textarea
+                    className="u-full-width"
+                    placeholder="Síntomas de la mascota"
+                    name="sintomas"
+                    onChange={handleChange}
+                    value={sintomas}
+                ></textarea>
                 <button type="submit" className="u-full-width button-primary">
                     Agregar cita
                 </button>
